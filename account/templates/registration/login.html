@@ -11,7 +11,7 @@
     </p>
   {% else %}
      <p>Please, use the following form to log-in. If you don't have an
-account <a href="{% url "register" %}">register here</a></p>
+       account <a href="{% url "register" %}">register here</a></p>
   {% endif %}
   <div class="login-form">
     <form action="{% url 'login' %}" method="post">
@@ -22,4 +22,15 @@ account <a href="{% url "register" %}">register here</a></p>
         <p> <input type="submit" value="Log-in"></p>
     </form>
   </div>
+    <div class="social">
+    <ul>
+        <li class="google">
+          <a href="{% url "social:begin" "google-oauth2" %}">Login with
+          Google</a>
+        </li>
+        <li class="facebook">
+            <a href="{% url "social:begin" "facebook" %}">Sign in with Facebook</a>
+        </li>
+    </ul>
+    </div>
 {% endblock %}
