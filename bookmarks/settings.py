@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'social_django',
     'django_extensions',
+    'images.apps.ImagesConfig',
 ]
 
 MIDDLEWARE = [
@@ -135,5 +136,5 @@ AUTHENTICATION_BACKENDS = [
 SOCIAL_AUTH_FACEBOOK_KEY = '696453784357489'
 SOCIAL_AUTH_FACEBOOK_SECRET = 'e24c84aafb5d9521c309729ac046a5ee'
 
-SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '370258208196-pr5lp2n8bd4nrauii407kn7amvp2tvf0.apps.googleusercontent.com' # Google Consumer Key
-SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = 'pXxtX9E0k2euiDJiBsZ-YyOu' # Google Consumer Secret
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '370258208196-pr5lp2n8bd4nrauii407kn7amvp2tvf0.apps.googleusercontent.com'  # Google Consumer Key
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = 'pXxtX9E0k2euiDJiBsZ-YyOu'  # Google Consumer Secret
